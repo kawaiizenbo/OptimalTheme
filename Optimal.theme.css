@@ -35,6 +35,11 @@ div[class*="mentioned"]::before
     background-color: rgb(var(--mention-colour));
 }
 
+div[class*="replying"]::before 
+{
+    width: 4px;
+}
+
 /* remove stuff we keep clicking on on accident >:( */
 div.iconWrapper-2awDjA.clickable-ZD7xvu[aria-label="Help"],
 .wordmarkWindows-2dq6rw,
@@ -149,6 +154,11 @@ div[id="user-context-call"],
 .scrollableContainer-15eg7h 
 {
     border-radius: 25px;
+}
+
+.attachedBars-2BCP3l, .replyBar-1oi75v
+{
+	border-radius: 20px !important;
 }
 
 /* embed round on one side */
