@@ -1,0 +1,322 @@
+/**
+* @name Optimal
+* @author KawaiiZenbo#8387 (287197076150812673)
+* @description the peak of cool
+* @version 1.0
+*/
+
+:root
+{
+    --stupid-shit: none;
+}
+
+/* hi-colour mentions */
+.mentioned-Tre-dv
+{
+    background-color: #0378781f !important;
+}
+
+.mentioned-Tre-dv:hover
+{
+    background-color: #03787810 !important;
+}
+
+div[class*="mentioned"]::before 
+{
+    width: 4px;
+    background-color: #037878;
+}
+
+/* remove stupid shit/shit i keep clicking on on accident >:( */
+div.iconWrapper-2awDjA.clickable-ZD7xvu[aria-label="Help"],
+.wordmarkWindows-2dq6rw,
+div[id="user-context-invite-to-server"],
+div[id="user-context-call"],
+.guildIconContainer-2FW_iA
+{
+    display: var(--stupid-shit) !important;
+}
+
+/* make image attachments all the way square */
+.imageWrapper-oMkQl4 
+{
+    border-radius: 0;
+}
+
+/* nicer buttons */
+.winButtonClose-3Q8ZH5 
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    right: 1px;
+    top: -3px;
+}
+  
+.winButtonMinMax-3RsPUg:nth-child(3) 
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    right: 3px;
+    top: -3px;
+}
+  
+.winButtonMinMax-3RsPUg:nth-child(4) 
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    right: 5px;
+    top: -3px;
+}
+
+/* reorder top bar */
+.searchBar-jGtisZ
+{
+    width: 210px;
+}
+
+.iconWrapper-2awDjA 
+{
+    order: -1;
+}
+
+/* remove that weird curve near the top left on windows */
+.platform-win .sidebar-1tnWFu 
+{
+    border-radius: 0;
+}
+
+/* role indicators */
+.role-2TIOKu 
+{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 12px;
+}
+
+.roleCircle-1EgnFN 
+{
+    width: 5 !important;
+    height: 5 !important;
+}
+
+.roleCircle-1EgnFN::before 
+{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* server channels */
+.content-1gYQeQ 
+{
+    background-color: var(--background-tertiary);
+    border-radius: 25px;
+}
+
+.unread-36eUEm 
+{
+    z-index: 1;
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    top: 42%;
+    left: 1px;
+    margin-top: 0px;
+    background-color: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);;
+}
+
+/* message text box */
+.scrollableContainer-15eg7h 
+{
+    border-radius: 25px;
+}
+
+/* embed round on one side */
+.embedFull-1HGV2S 
+{
+  border-radius: 0px 25px 25px 0px;
+}
+
+/* fix channel typing indicator on light mode */
+.theme-light .channel-typing 
+{
+    filter: invert(1);
+}
+
+/* settings is modal https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css*/
+#app-mount .baseLayer-W6S8cY {
+	opacity: 1 !important;
+	transform: unset !important;
+	will-change: unset !important;
+}
+#app-mount .stop-animations * {
+	transition-property: inherit !important;
+	animation: inherit !important;
+}
+#app-mount .layer-86YKbF.stop-animations:first-child::after {
+	content: "" !important;
+	position: fixed !important;
+	background: rgb(0, 0, 0) !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	opacity: 0.85 !important;
+	z-index: 999 !important;
+	pointer-events: none !important;
+}
+
+#app-mount .layer-86YKbF ~ .layer-86YKbF {
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	background: transparent !important;
+	border-radius: 5px !important;
+	box-shadow: var(--elevation-high) !important;
+	width: 960px !important;
+	height: 80vh !important;
+	margin: auto !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	contain: unset !important;
+	z-index: 1000 !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF > div,
+#app-mount .layer-86YKbF ~ .layer-86YKbF .standardSidebarView-E9Pc3j {
+	position: static !important;
+	border-radius: unset !important;
+	width: 100% !important;
+	height: 100% !important;
+	margin: unset !important;
+	padding: unset !important;
+	overflow: hidden !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .sidebar-nqHbhN {
+	width: 218px !important;
+	padding: 20px 6px 20px 20px !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .contentColumnDefault-3eyv5o {
+	padding: 20px 40px !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .sidebar-3K3Z4C {
+	height: 80hv !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .repoHeader-2KfNvH {
+	max-width: calc(960px - 256px) !important;;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .standardSidebarView-E9Pc3j .editor {
+	height: calc(80vh - 120px) !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .toolsContainer-25FL6V,
+#app-mount .layer-86YKbF ~ .layer-86YKbF .toolsContainer-25FL6V .tools-kIrEGr,
+#app-mount .layer-86YKbF ~ .layer-86YKbF .toolsContainer-25FL6V .container-O54IuJ,
+#app-mount .layer-86YKbF ~ .layer-86YKbF .toolsContainer-25FL6V .closeButton-PCZcma {
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	background: transparent !important;
+	border: none !important;
+	border-radius: 0 !important;
+	width: 100% !important;
+	max-width: unset !important;
+	height: 100% !important;
+	max-height: unset !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	opacity: 0 !important;
+	cursor: default !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .toolsContainer-25FL6V {
+	position: fixed !important;
+	top: 22px !important;
+	z-index: -1 !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .settingsToolbar-wu4yfQ {
+	display: none !important;
+}
+#app-mount .layer-86YKbF ~ .layer-86YKbF .header-2Kx1US {
+	max-width: calc(960px - 730px) !important;
+}
+
+#app-mount .root-2zfUH6 {
+	position: fixed !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	background: transparent !important;
+	border-radius: 5px !important;
+	box-shadow: var(--elevation-high) !important;
+	width: 960px !important;
+	height: 80vh !important;
+	margin: auto !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	contain: unset !important;
+	z-index: 1000 !important;
+}
+#app-mount .root-2zfUH6.enterDone-menWZ8 {
+	transform: unset !important;
+}
+#app-mount .perksModal-CLcR1c {
+	position: static !important;
+	border-radius: unset !important;
+	width: 100% !important;
+	height: 100% !important;
+	margin: unset !important;
+	padding: unset !important;
+}
+#app-mount .perksModal-CLcR1c::before {
+	width: 960px !important;
+	height: 80vh !important;
+	margin: auto !important;
+}
+#app-mount .perksModalContentWrapper-3RHugb {
+	padding: 10px 0 10px !important;
+}
+#app-mount .root-2zfUH6 .perksModal-CLcR1c .carousel-3dvee9 {
+	margin-left: calc(-0.5 * (100vw - 960px)) !important;
+}
+#app-mount .root-2zfUH6 .closeWrapper-9ScmSq,
+#app-mount .root-2zfUH6 .closeWrapper-9ScmSq .closeContent-I3JbQJ,
+#app-mount .root-2zfUH6 .closeWrapper-9ScmSq .container-O54IuJ,
+#app-mount .root-2zfUH6 .closeWrapper-9ScmSq .closeButton-PCZcma {
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	background: transparent !important;
+	border: none !important;
+	border-radius: 0 !important;
+	width: 100% !important;
+	max-width: unset !important;
+	height: 100% !important;
+	max-height: unset !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	opacity: 0 !important;
+	cursor: default !important;
+}
+#app-mount .root-2zfUH6 .closeWrapper-9ScmSq {
+	position: fixed !important;
+	top: 22px !important;
+	z-index: -1 !important;
+}
