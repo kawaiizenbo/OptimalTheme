@@ -5,7 +5,8 @@
 * @version 1.0
 */
 
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");
+@import url("https://stickfab.github.io/pc-fluenticons/FluentIcons.css");
 
 :root
 {
