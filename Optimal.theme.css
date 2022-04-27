@@ -2,7 +2,7 @@
 * @name Optimal
 * @author KawaiiZenbo#8387 (287197076150812673)
 * @description everything we wanted in a theme, nothing we didnt
-* @version 1.0
+* @version 1.1
 */
 
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");
@@ -41,7 +41,7 @@ div[class*="replying"]::before
     width: 4px;
 }
 
-/* remove stuff we keep clicking on on accident >:( */
+/* remove stuff we keep clicking on on accident :( */
 div.iconWrapper-2awDjA.clickable-ZD7xvu[aria-label="Help"],
 .wordmarkWindows-2dq6rw,
 div[id="user-context-invite-to-server"],
@@ -160,6 +160,42 @@ div[id="user-context-call"],
 .attachedBars-2BCP3l, .replyBar-1oi75v
 {
 	border-radius: 20px !important;
+}
+
+/* behind message box gone */
+.scroller-kQBbkU 
+{
+    margin-bottom: -100px;
+    padding-bottom: 100px;
+}
+
+.form-3gdLxP:before 
+{
+    display: none;
+}
+
+.channelTextArea-1FufC0
+{
+    background: transparent !important;
+}
+
+/* blur message box bg */
+.scrollableContainer-15eg7h
+{
+    -webkit-backdrop-filter: blur(4px);
+    -o-backdrop-filter: blur(4px);
+    -moz-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.theme-dark .scrollableContainer-15eg7h
+{
+    background-color: #10101077;
+}
+
+.theme-light .scrollableContainer-15eg7h
+{
+    background-color: #e0e0e077;
 }
 
 /* embed round on one side */
