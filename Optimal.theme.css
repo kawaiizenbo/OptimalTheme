@@ -103,12 +103,6 @@ div[id="user-context-call"],
     border-radius: 0;
 }
 
-/* make the top of the chat have rounded corners */
-.messagesWrapper-RpOMA3
-{
-    border-radius: 10px, 10px, 0px, 0px;
-}
-
 /* nicer close/minimize/maximize buttons on windows */
 .winButtonClose-3Q8ZH5 
 {
