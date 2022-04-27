@@ -2,7 +2,7 @@
 * @name Optimal
 * @author KawaiiZenbo#8387 (287197076150812673)
 * @description everything we wanted in a theme, nothing we didnt
-* @version 1.1.1
+* @version 1.1.2
 */
 
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");
@@ -12,6 +12,11 @@
 {
     --stupid-stuff: none;
 	--mention-colour: 3,120,120;
+
+    --bg1: 40,30,50;
+    --bg2: 35,25,45;
+    --bg3: 30,20,40;
+    --bg4: 25,15,35;
 
 	/* SettingsModal */
 	--settingsmodalbackground:     transparent;            /* default:    transparent        (lowest bg color of changed windows, change it in case another theme turns them transparent)    */
@@ -27,6 +32,35 @@
     --text-muted: #404047;
     --interactive-muted: #99999f;
     --background-primary: #F9F9FF;
+}
+
+/* change dark mode colours */
+.theme-dark
+{
+    --background-modifier-selected: rgb(var(--bg4));
+    --background-message-hover: rgb(var(--bg2));
+    --background-modifier-hover: rgb(var(--bg2));
+    --background-modifier-active: rgb(var(--bg4));
+    --background-floating: rgb(var(--bg3));
+    --scrollbar-auto-thumb: rgb(var(--bg4));
+    --scrollbar-auto-track: rgb(var(--bg1));
+    --scrollbar-thin-thumb: rgb(var(--bg4));
+    --activity-card-background: rgb(var(--bg3));
+    --background-tertiary: rgb(var(--bg4));
+    --background-secondary: rgb(var(--bg3));
+    --background-secondary-alt: rgb(var(--bg3));
+    --background-primary: rgb(var(--bg1));
+    --channeltextarea-background: rgb(var(--bg3));
+}
+
+.peopleColumn-1wMU14 
+{
+    background: var(--background-primary);
+}
+
+.title-31SJ6t 
+{
+    background-color: var(--background-secondary) !important;
 }
 
 /* hi-colour mentions */
@@ -56,7 +90,9 @@ div.iconWrapper-2awDjA.clickable-ZD7xvu[aria-label="Help"],
 .wordmarkWindows-2dq6rw,
 div[id="user-context-invite-to-server"],
 div[id="user-context-call"],
-.guildIconContainer-2FW_iA
+.guildIconContainer-2FW_iA,
+.children-3xh0VB::after,
+.tabBarItemContainer-2HdIlr svg
 {
     display: var(--stupid-stuff) !important;
 }
@@ -65,6 +101,12 @@ div[id="user-context-call"],
 .imageWrapper-oMkQl4 
 {
     border-radius: 0;
+}
+
+/* make the top of the chat have rounded corners */
+.messagesWrapper-RpOMA3
+{
+    border-radius: 10px, 10px, 0px, 0px;
 }
 
 /* nicer close/minimize/maximize buttons on windows */
@@ -104,12 +146,6 @@ div[id="user-context-call"],
 .iconWrapper-2awDjA 
 {
     order: -1;
-}
-
-/* remove that weird curve near the top left on windows */
-.platform-win .sidebar-1tnWFu 
-{
-    border-radius: 0;
 }
 
 /* role indicator background on user popout */
@@ -192,26 +228,22 @@ div[id="user-context-call"],
 /* blur message box bg */
 .scrollableContainer-15eg7h
 {
+    background-color: rgba(var(--bg3), 0.5) !important;
     -webkit-backdrop-filter: blur(4px);
     -o-backdrop-filter: blur(4px);
     -moz-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 }
 
-.theme-dark .scrollableContainer-15eg7h
-{
-    background-color: #10101077;
-}
-
 .theme-light .scrollableContainer-15eg7h
 {
-    background-color: #e0e0e077;
+    background-color: #f7f7f777 !important;
 }
 
 /* embed round on one side */
 .embedFull-1HGV2S 
 {
-  border-radius: 0px 25px 25px 0px;
+    border-radius: 0px 25px 25px 0px;
 }
 
 /* fix channel typing indicator on light mode */
