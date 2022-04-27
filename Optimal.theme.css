@@ -19,6 +19,16 @@
     --settingsmodalheight:         80vh;                    /* default:    80vh            (height of the settings modal, px/vh)                                                            */
 }
 
+/* make light mode more tolerable */
+.theme-light 
+{
+    --text-normal: #101017;
+    --channels-default: #303037;
+    --text-muted: #404047;
+    --interactive-muted: #99999f;
+    --background-primary: #F9F9FF;
+}
+
 /* hi-colour mentions */
 .mentioned-Tre-dv
 {
