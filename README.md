@@ -1,5 +1,5 @@
 # OptimalTheme 
-everything we wanted in a theme, nothing we didnt
+everything we wanted in a theme, nothing we didnt  
 Client mods other than Powercord have not been tested but should work  
 
 ## Includes:
