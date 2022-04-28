@@ -246,3 +246,10 @@ div[id="user-context-call"],
 {
     filter: invert(1);
 }
+
+/* background a typing indicators */
+.typingDots-1Y8dki
+{
+    background-color: var(--background-secondary);
+    border-radius: 12px;
+}
