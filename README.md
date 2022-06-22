@@ -15,5 +15,5 @@ Install [Theme Toggler](https://github.com/redstonekasi/theme-toggler), then clo
 Place `Optimal.theme.css` into your themes folder
 
 ## Screenshots:
-![Dark Mode](https://user-images.githubusercontent.com/48113593/164038847-19c1d9f6-5a8d-4f89-95e4-80e660102d26.png)
-![Light Mode](https://user-images.githubusercontent.com/48113593/164038910-b31acbda-d91c-4527-8d0f-77fb99419790.png)
+![Dark Mode](https://kawaiizenbo.me/sx/i/kzrzzvhrhk2c.png)
+![Light Mode](https://kawaiizenbo.me/sx/i/kzbgaoow9lle.png)
