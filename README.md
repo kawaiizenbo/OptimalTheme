@@ -9,7 +9,7 @@ https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/SettingsModa
 ## How to install:  
 
 ### Powercord:
-Install [Theme Toggler](https://github.com/redstonekasi/theme-toggler), then clone this repo into your themes folder  
+Clone this repo into your themes folder  
 
 ### BetterDiscord (ew):
 Place `Optimal.theme.css` into your themes folder
