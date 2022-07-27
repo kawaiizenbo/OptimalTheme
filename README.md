@@ -1,12 +1,15 @@
 # OptimalTheme 
 everything we wanted in a theme, nothing we didnt  
-Client mods other than Powercord have not been tested but should work  
+Originally intended for Powercord but should work with other client mods  
 
 ## Includes:
 https://github.com/stickfab/pc-fluenticons
 https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/SettingsModal
 
 ## How to install:  
+
+### Topaz:
+Add this link `https://github.com/kawaiizenbo/OptimalTheme` to your themes section  
 
 ### Powercord:
 Clone this repo into your themes folder  
