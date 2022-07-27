@@ -8,7 +8,7 @@ https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/SettingsModa
 
 ## How to install:  
 
-### Topaz:
+### Goosemod/Topaz:
 Add this link `https://github.com/kawaiizenbo/OptimalTheme` to your themes section  
 
 ### Powercord:
