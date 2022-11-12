@@ -1,17 +1,10 @@
-/**
-* @name Optimal
-* @author KawaiiZenbo#8387 (287197076150812673)
-* @description everything we wanted in a theme, nothing we didnt
-* @version 1.1.3
-*/
-
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");
 @import url("https://stickfab.github.io/pc-fluenticons/FluentIcons.css");
 
 :root
 {
     --stupid-stuff: none;
-	--mention-colour: 255,33,88;
+	--mention-colour: 88,255,33;
 
     --bg1: 40,30,50;
     --bg2: 35,25,45;
@@ -21,7 +14,17 @@
 	/* SettingsModal */
 	--settingsmodalbackground:     transparent;            /* default:    transparent        (lowest bg color of changed windows, change it in case another theme turns them transparent)    */
     --settingsmodalwidth:         960px;                    /* default:    960px            (width of the settings modal, px/vw)                                                            */
-    --settingsmodalheight:         80vh;                    /* default:    80vh            (height of the settings modal, px/vh)                                                            */
+    --settingsmodalheight:         80vh;                    /* default:    80vh            (height of the settings modal, px/vh)                                                           */
+
+    /* stock colour replacement */
+    --status-red-500: rgb(255, 33, 88);
+    --status-red-500-rgb: 255, 33, 88;
+    --status-green-600: rgb(88, 255, 33);
+    --status-green-600-rgb: 88, 255, 33;
+    --status-green-660: rgb(88, 255, 33);
+    --status-green-660-rgb: 88, 255, 33;
+    --status-yellow-500: rgb(255, 255, 33);
+    --status-yellow-500-rgb: 255, 255, 33;
 }
 
 /* make light mode more tolerable */
@@ -32,6 +35,7 @@
     --text-muted: #404047;
     --interactive-muted: #99999f;
     --background-primary: #F9F9FF;
+    --mention-colour: 199,33,255;
 }
 
 /* change dark mode colours */
@@ -89,10 +93,7 @@ div[class*="replying"]::before
 div.iconWrapper-2awDjA.clickable-ZD7xvu[aria-label="Help"],
 .wordmarkWindows-2dq6rw,
 div[id="user-context-invite-to-server"],
-div[id="user-context-call"],
-.guildIconContainer-2FW_iA,
-.children-3xh0VB::after,
-.tabBarItemContainer-2HdIlr svg
+div[id="user-context-call"]
 {
     display: var(--stupid-stuff) !important;
 }
@@ -151,6 +152,7 @@ div[id="user-context-call"],
     border-radius: 12px;
     border-width: 2px;
     border-style: solid;
+    border-color: inherit;
 }
 
 .roleCircle-1EgnFN 
@@ -191,39 +193,6 @@ div[id="user-context-call"],
 	border-radius: 20px !important;
 }
 
-/* behind message box gone */
-.scroller-kQBbkU 
-{
-    margin-bottom: -100px;
-    padding-bottom: 100px;
-}
-
-.form-3gdLxP:before 
-{
-    display: none;
-}
-
-.channelTextArea-1FufC0
-{
-    background: transparent !important;
-}
-
-/* blur message box bg */
-.scrollableContainer-15eg7h
-{
-    background-color: rgba(var(--bg3), 0.5) !important;
-    -webkit-backdrop-filter: blur(4px);
-    -o-backdrop-filter: blur(4px);
-    -moz-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    filter: drop-shadow(0rem 0rem 0.5rem rgba(0, 0, 20, 0.2));
-}
-
-.theme-light .scrollableContainer-15eg7h
-{
-    background-color: #e0e0e077 !important;
-}
-
 /* embed round on one side */
 .embedFull-1HGV2S 
 {
@@ -234,11 +203,4 @@ div[id="user-context-call"],
 .theme-light .channel-typing 
 {
     filter: invert(1);
-}
-
-/* background a typing indicators */
-.typingDots-1Y8dki
-{
-    background-color: var(--background-secondary);
-    border-radius: 12px;
 }
