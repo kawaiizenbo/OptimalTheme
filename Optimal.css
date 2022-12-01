@@ -1,5 +1,7 @@
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");
 @import url("https://stickfab.github.io/pc-fluenticons/FluentIcons.css");
+/* thx ducko */
+@import url("https://kawaiizenbo.me/assets/ungg-sans.css");
 
 :root
 {
@@ -15,16 +17,6 @@
 	--settingsmodalbackground:     transparent;            /* default:    transparent        (lowest bg color of changed windows, change it in case another theme turns them transparent)    */
     --settingsmodalwidth:         960px;                    /* default:    960px            (width of the settings modal, px/vw)                                                            */
     --settingsmodalheight:         80vh;                    /* default:    80vh            (height of the settings modal, px/vh)                                                           */
-
-    /* stock colour replacement */
-    --status-red-500: rgb(255, 33, 88);
-    --status-red-500-rgb: 255, 33, 88;
-    --status-green-600: rgb(88, 255, 33);
-    --status-green-600-rgb: 88, 255, 33;
-    --status-green-660: rgb(88, 255, 33);
-    --status-green-660-rgb: 88, 255, 33;
-    --status-yellow-500: rgb(255, 255, 33);
-    --status-yellow-500-rgb: 255, 255, 33;
 }
 
 /* make light mode more tolerable */
